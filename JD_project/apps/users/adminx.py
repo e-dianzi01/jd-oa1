@@ -4,8 +4,10 @@ __date__ = '2019/6/25 14:08'
 import xadmin as admin
 
 from xadmin import views
-from users.models import LoginUser
-from users.forms import LoginUserForm
+from users.models import JdShopper
+from users.forms import JdShopperForm
+
+
 # Register your models here.
 
 
@@ -18,27 +20,18 @@ class GlobalSetting(object):
     menu_style = "accordion"
 
 
-class LoginUserAdmin(object):
-    form = LoginUserForm
-    list_display = ['login_name', 'create_time', 'update_time']
+class JdShopperAdmin(object):
+    form = JdShopperForm
+    list_display = ['m_id','login_name', 'create_time', 'm_name', 'is_active', '']
     list_per_page = 20
     model_icon = 'glyphicon glyphicon-user'     # 添加模型图标
 
 
-admin.site.register(LoginUser, LoginUserAdmin)
+admin.site.register(JdShopper, JdShopperAdmin)
+
+
 """
-class JdUserAdmin(object):
-    form = JdUserForm
-    list_display = ['user_id', 'user_name', 'nick_name',  'tel', 'is_login']
-    list_per_page = 20
-
-
-class JdShopperAdmin(object):
-    form = JdUserForm
-    list_display = ['m_id', 'm_name', 'm_username',  'm_email', 'm_phone']
-    list_per_page = 20
 """
-
 
 
 # 创建xadmin的最基本管理器配置，并与view绑定

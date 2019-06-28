@@ -82,28 +82,28 @@ WSGI_APPLICATION = 'JD_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jd',
-        'USER': 'root',
-        'PASSWORD': 'buzhidao',
-        'HOST': 'localhost',
-        'PORT': 3306,
-        'CHARSET': 'utf8'
-    }
-}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'jd_api_db',
+#         'NAME': 'jd',
 #         'USER': 'root',
-#         'PASSWORD': 'root',
-#         'HOST': '121.199.63.71',
+#         'PASSWORD': 'buzhidao',
+#         'HOST': 'localhost',
 #         'PORT': 3306,
 #         'CHARSET': 'utf8'
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jd_api_db',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '121.199.63.71',
+        'PORT': 3306,
+        'CHARSET': 'utf8'
+    }
+}
 
 
 # Password validation
@@ -144,3 +144,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATCFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static')
+)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

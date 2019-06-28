@@ -32,6 +32,25 @@
 
 {% block content %}
   <div class="content-toolbar btn-toolbar pull-right clearfix">
+  {# 分页条数 #}
+{##}
+{#  <div class="btn-group">#}
+{##}
+{#          <a class="dropdown-toggle btn btn-default btn-sm" data-toggle="dropdown" href="#">分页条数#}
+{#         <span class="caret"></span>#}
+{#      </a>#}
+{##}
+{#      <ul class="dropdown-menu model_fields pull-right" role="menu" aria-labelledby="dLabel">#}
+{#            <li><a href="?list_per_page=3">3</a></li>#}
+{#           <li><a href="?list_per_page=5">5</a></li>#}
+{#            <li><a href="?list_per_page=10">10</a></li>#}
+{#    <li><a href="?list_per_page=20">20</a></li>#}
+{#      </ul>#}
+{##}
+{#    </div>#}
+
+{# 分页条数 #}
+
     {% view_block 'top_toolbar' %}
     {% block toolbar_column %}
     <div class="btn-group">

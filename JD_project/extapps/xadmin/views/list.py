@@ -420,6 +420,10 @@ class ListAdminView(ModelAdminView):
 
     @filter_hook
     def get_paginator(self):
+        # list_per_page = self.request.GET.get("list_per_page")
+        #
+        # if list_per_page:
+        #     self.list_per_page = int(list_per_page)
         return self.paginator_class(self.list_queryset, self.list_per_page, 0, True)
 
     @filter_hook

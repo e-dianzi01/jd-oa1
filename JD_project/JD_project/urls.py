@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.views.static import serve
+
 import xadmin as admin
+from JD_project import settings
 
 urlpatterns = [
+url(r'^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
     url(r'^admin/', admin.site.urls),
 ]
