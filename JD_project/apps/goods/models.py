@@ -198,3 +198,5 @@ class Coupon(models.Model):
         db_table = 'jd_coupon'
         verbose_name = '优惠券表'
         verbose_name_plural = verbose_name
+
+

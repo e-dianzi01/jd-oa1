@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'jd_api_db',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '121.199.63.71',
+        'HOST': 'localhost',
         'PORT': 3306,
         'CHARSET': 'utf8'
     }
