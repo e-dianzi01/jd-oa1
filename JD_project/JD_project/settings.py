@@ -28,7 +28,7 @@ SECRET_KEY = 'v=+dtf*e%&=m0_)+_+72nsbfy7571^@0=(jwd!c+xg#&*rg^-x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'JD_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'jd_api_db',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'HOST': '121.199.63.71',
         'PORT': 3306,
         'CHARSET': 'utf8'
     }

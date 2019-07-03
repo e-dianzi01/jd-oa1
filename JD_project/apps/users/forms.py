@@ -7,9 +7,9 @@ from users.models import *
 
 
 class JdShopperForm(forms.ModelForm):
-    login_auth_str = forms.CharField(max_length=100,
-                                     widget=forms.PasswordInput,
-                                     label='口令')
+    m_pwd = forms.CharField(max_length=100,
+                            widget=forms.PasswordInput,
+                            label='口令')
 
     class Meta:
         model = JdShopper

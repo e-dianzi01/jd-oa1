@@ -22,16 +22,12 @@ class GlobalSetting(object):
 
 class JdShopperAdmin(object):
     form = JdShopperForm
-    list_display = ['m_id','login_name', 'create_time', 'm_name', 'is_active', '']
+    list_display = ['m_id', 'm_name', 'm_username', 'create_time', 'is_active']
     list_per_page = 20
     model_icon = 'glyphicon glyphicon-user'     # 添加模型图标
 
 
 admin.site.register(JdShopper, JdShopperAdmin)
-
-
-"""
-"""
 
 
 # 创建xadmin的最基本管理器配置，并与view绑定
