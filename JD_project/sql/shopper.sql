@@ -6,3 +6,8 @@ insert  into jd_shopper(m_name,m_username,m_id,is_active,is_delete)values
 ("华为旗舰店","华为旗舰店",105,0,0),
 ("苹果旗舰店","苹果旗舰店",106,0,0),
 ("华硕旗舰店","华硕旗舰店",107,0,0);
+
+
+insert into shopper_type(m_id_id,type_name,remark)values
+(104,"热销#新品#轻薄本#商务办公#高性能轻轻薄本#X系列 飞行家系列#T480#T490#X1系列 黑色智慧#T系列 工程师系列#E系列 先锋牌系列","100009");
+

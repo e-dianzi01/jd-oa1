@@ -1,6 +1,6 @@
 insert into goods_type1(one_type_id,one_type_name,remark,type_img)values
 (1,"手机数码","品牌热门:100009#手机通讯:100002#手机配件:100003",""),
-(2,"家用电器","厨房小电:100004#个人护理:100005#冰箱:100006#洗衣机:100007#电视:100008",""),
+(2,"家用电器","厨房小电:100004#空调:100005#冰箱:100006#洗衣机:100007#电视:100008",""),
 (3,"电脑办公","热卖分类:100009",""),
 (4,"京东超市","个人清洁:100010#休闲零食:100011#水饮茗茶:100012#京东生鲜:100013",""),
 (5,"男装","男士内搭:100014#男士外套:100015#男士裤装:100016#牛仔裤:100017#特色男装:100018",""),
@@ -17,6 +17,7 @@ insert into goods_type1(one_type_id,one_type_name,remark,type_img)values
 (15,"内衣配饰","内裤:100050#袜子:100051#服饰配件:100052#睡衣/家居服:100053","");
 
 
+
 insert into goods_type2(two_type_id,two_type_name,remark,type_img)values
 (0,"机不离手","手机中毒患者心水尖货","//m.360buyimg.com/mobilecms/s150x150_jfs/t1/1517/6/11867/313846/5bd128dfE2737a9b0/37c9d72248e6f2ca.png!q70.jpg.dpg#//m.360buyimg.com/mobilecms/s150x150_jfs/t29398/5/1588124706/105597/c5694f76/5ce4ee54N0c99dcc9.jpg!q70.jpg.dpg"),
 (0,"程序猿","我的世界你不懂","//m.360buyimg.com/mobilecms/s150x150_jfs/t6028/142/729152180/332153/d9337708/592bf16aN59bc4644.jpg!q70.jpg.dpg#//m.360buyimg.com/mobilecms/s150x150_jfs/t3838/360/30842602/245436/c8d21674/5804fe12N50fda30b.jpg!q70.jpg.dpg"),
@@ -25,22 +26,22 @@ insert into goods_type2(two_type_id,two_type_name,remark,type_img)values
 (0,"蕾丝控","类似的剪影","//m.360buyimg.com/mobilecms/s150x150_jfs/t1/30669/5/15442/235215/5cc268f9E58304f7e/6d7c98a13dc15bb4.jpg!q70.jpg.dpg"),
 (0,"颜值神器","颜值抢镜","//m.360buyimg.com/mobilecms/s150x150_jfs/t1/61474/6/2677/244822/5d1035e0E7ee37362/b2587411c7ad7e32.jpg!q70.jpg.dpg"),
 
-(100,"空调馆 ","","//m.360buyimg.com/babel/jfs/t1/43175/35/1950/8434/5cc833b9Ec61e3b37/c8459e4743641076.png"),
-(100,"小家电馆","","//m.360buyimg.com/babel/jfs/t1/38840/6/4207/13957/5cc833e5Ed386aaa3/7e1427b1b6c35a2b.png"),
-(100,"厨卫馆","","//m.360buyimg.com/babel/jfs/t1/36631/39/7579/9783/5cc833ccE6be18a83/058a8b851f953e41.png"),
-(100,"电视馆","","//m.360buyimg.com/babel/jfs/t1/40841/32/1971/20050/5cc833deE83bd3561/de2c23a54906bf00.png"),
-(100,"冰洗馆","","//m.360buyimg.com/babel/jfs/t1/34561/32/5397/12374/5cc833c4E2fa920c8/a739846efa2c9e33.png"),
+(1001,"空调馆 ","","//m.360buyimg.com/babel/jfs/t1/43175/35/1950/8434/5cc833b9Ec61e3b37/c8459e4743641076.png"),
+(1002,"小家电馆","","//m.360buyimg.com/babel/jfs/t1/38840/6/4207/13957/5cc833e5Ed386aaa3/7e1427b1b6c35a2b.png"),
+(1003,"厨卫馆","","//m.360buyimg.com/babel/jfs/t1/36631/39/7579/9783/5cc833ccE6be18a83/058a8b851f953e41.png"),
+(1004,"电视馆","","//m.360buyimg.com/babel/jfs/t1/40841/32/1971/20050/5cc833deE83bd3561/de2c23a54906bf00.png"),
+(1005,"冰洗馆","","//m.360buyimg.com/babel/jfs/t1/34561/32/5397/12374/5cc833c4E2fa920c8/a739846efa2c9e33.png"),
 (101,"智能家电","让生活更聪明","//m.360buyimg.com/babel/jfs/t1/46089/6/1292/9171/5cf0bf70Ea239d4df/6ef4ede21551e94e.jpg!q70.dpg"),
 (101,"京品家电","让生活更聪明","//m.360buyimg.com/babel/jfs/t30052/187/1364955422/48362/ecd11924/5cdd63e7N38c81ea7.png"),
 (102,"大牌特惠","口碑爆品直降千元","//m.360buyimg.com/babel/jfs/t11374/323/3125683502/25593/1708f27a/5ce289c1Nc0e7e988.jpg!q70.dpg"),
 (102,"大牌上新","心动之选","//m.360buyimg.com/babel/jfs/t29662/27/1635296066/68039/e5cbf3c5/5ce66c8eNbd1b28fa.png"),
 (102,"热门好店","大家都在逛","//m.360buyimg.com/babel/jfs/t8773/56/2496624557/167096/ab20a40f/59cf3f5cN72be6bd8.jpg!q70.dpg"),
 
-(100009,"小米","品牌热门","//img30.360buyimg.com/focus/s140x140_jfs/t13411/188/926813276/3945/a4f47292/5a1692eeN105a64b4.png"),
-(100009,"华为","品牌热门","//img14.360buyimg.com/focus/s140x140_jfs/t11929/135/2372293765/1396/e103ec31/5a1692e2Nbea6e136.jpg"),
-(100009,"荣耀","品牌热门","//img10.360buyimg.com/focus/s140x140_jfs/t12178/348/911080073/4732/db0ad9c7/5a1692e2N6df7c609.jpg"),
-(100009,"iPhone","品牌热门","//img20.360buyimg.com/focus/s140x140_jfs/t13759/194/897734755/2493/1305d4c4/5a1692ebN8ae73077.jpg"),
-(100009,"vivo","品牌热门","//img11.360buyimg.com/focus/s140x140_jfs/t11014/359/2341377211/2777/1755c29c/5a169244Nff0179e0.png"),
+(100001,"小米","品牌热门","//img30.360buyimg.com/focus/s140x140_jfs/t13411/188/926813276/3945/a4f47292/5a1692eeN105a64b4.png"),
+(100001,"华为","品牌热门","//img14.360buyimg.com/focus/s140x140_jfs/t11929/135/2372293765/1396/e103ec31/5a1692e2Nbea6e136.jpg"),
+(100001,"荣耀","品牌热门","//img10.360buyimg.com/focus/s140x140_jfs/t12178/348/911080073/4732/db0ad9c7/5a1692e2N6df7c609.jpg"),
+(100001,"iPhone","品牌热门","//img20.360buyimg.com/focus/s140x140_jfs/t13759/194/897734755/2493/1305d4c4/5a1692ebN8ae73077.jpg"),
+(100001,"vivo","品牌热门","//img11.360buyimg.com/focus/s140x140_jfs/t11014/359/2341377211/2777/1755c29c/5a169244Nff0179e0.png"),
 (100002,"老人机","手机通讯","//img12.360buyimg.com/focus/s140x140_jfs/t15085/289/2395028996/2546/1e7e1f7b/5a9fa5e7Nc5cc0f6b.jpg"),
 (100002,"全屏手机","手机通讯","//img12.360buyimg.com/focus/s140x140_jfs/t15085/289/2395028996/2546/1e7e1f7b/5a9fa5e7Nc5cc0f6b.jpg"),
 (100002,"女性手机","手机通讯","//img12.360buyimg.com/focus/s140x140_jfs/t15790/6/2311892256/2742/5ed77924/5a9fa728Nbff29ad2.jpg"),
@@ -62,12 +63,12 @@ insert into goods_type2(two_type_id,two_type_name,remark,type_img)values
 (100004,"豆浆机","厨房小电","//img11.360buyimg.com/focus/s140x140_jfs/t14065/132/988058896/1688/99cd0a3d/5a17f229Nc4c681fb.jpg"),
 (100004,"榨汁机","厨房小电","//img13.360buyimg.com/focus/s140x140_jfs/t13264/165/968827574/9255/7d10ad8c/5a17f224N9756f6e5.jpg"),
 (100004,"电烤箱","厨房小电","//img11.360buyimg.com/focus/s140x140_jfs/t12094/76/967581282/2377/4611685d/5a17f1f1N9c125c81.jpg"),
-(100005,"电吹风","个人护理","//img14.360buyimg.com/focus/s140x140_jfs/t13981/225/965020395/7369/1740dbbb/5a17c20fN16e27ed9.png"),
-(100005,"剃须刀","个人护理","//img14.360buyimg.com/focus/s140x140_jfs/t11539/356/2296587411/5881/9d96908e/5a17c221Nf85c1934.jpg"),
-(100005,"理发器","个人护理","//img10.360buyimg.com/focus/s140x140_jfs/t11125/324/2448652642/4268/cd0fff76/5a17c201N6f968e89.jpg"),
-(100005,"足浴盆","个人护理","//img10.360buyimg.com/focus/s140x140_jfs/t11209/303/2393582425/2406/d7c577aa/5a17c1eeNb9958e28.jpg"),
-(100005,"脱毛器","个人护理","//img30.360buyimg.com/focus/s140x140_jfs/t13306/243/970438254/1447/a2be4ca5/5a17c21bN9fa5f473.jpg"),
-(100005,"按摩器","个人护理","//img30.360buyimg.com/focus/s140x140_jfs/t13306/163/993416845/6361/f53b0e98/5a17c1f5Nb9390d12.jpg"),
+
+(100005,"壁挂式空调","空调","//img14.360buyimg.com/focus/s140x140_jfs/t12058/333/988659369/2356/40b65021/5a17f6f6Ndfe746aa.jpg"),
+(100005,"柜式空调","空调","//img10.360buyimg.com/focus/s140x140_jfs/t11653/86/2434484739/2995/5e325e47/5a17f70dN5ecd3e87.jpg"),
+(100005,"中央空调","空调","//img11.360buyimg.com/focus/s140x140_jfs/t12286/335/981024064/4500/bb0106e/5a17f6e4N2357e87a.jpg"),
+(100005,"空调配件","空调","//img11.360buyimg.com/focus/s140x140_jfs/t12286/335/981024064/4500/bb0106e/5a17f6e4N2357e87a.jpg"),
+
 (100006,"双门冰箱","冰箱","//img12.360buyimg.com/focus/s140x140_jfs/t13153/44/964603695/1011/21d660d2/5a17f6aeN280056ea.jpg"),
 (100006,"对双开冰箱","冰箱","//img20.360buyimg.com/focus/s140x140_jfs/t13588/266/943842715/1088/c4ae40e4/5a17f6c5Ne56d7e26.jpg"),
 (100006,"十字对开门","冰箱","//img14.360buyimg.com/focus/s140x140_jfs/t13711/311/977302673/2235/1a734ffc/5a17f6caNd7a7e0aa.jpg"),

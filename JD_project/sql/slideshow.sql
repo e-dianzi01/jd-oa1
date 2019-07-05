@@ -30,5 +30,10 @@ insert into slideshow(page_name,img_urls,remark)values
 
 
 
-insert into shopper_img(m_id,img,remark)values
+insert into shopper_img(m_id_id,img,remark)values
 (104,'//img12.360buyimg.com/cms/jfs/t1/33227/2/8930/490667/5cc80a19Ede213016/dba0e27a76c80f22.jpg!q70.dpg.webp#//img10.360buyimg.com/cms/jfs/t1/57305/4/3887/282207/5d19d333Eacd91ac8/3cf1cfa1e62a11b1.jpg!q70.dpg.webp#//img13.360buyimg.com/cms/jfs/t1/62295/28/2455/474652/5d0c40fbEdb8017cc/4320c0cb6753cc4a.jpg!q70.dpg.webp#//img12.360buyimg.com/cms/jfs/t1/33227/2/8930/490667/5cc80a19Ede213016/dba0e27a76c80f22.jpg!q70.dpg.webp#//img10.360buyimg.com/cms/jfs/t1/67085/12/2502/148486/5d0c934dE82024784/d57d816fbb737888.jpg!q70.dpg.webp','首页轮播图'),
+
+insert into shopper_img(m_id_id,img,remark)values
+(104,'//img12.360buyimg.com/cms/jfs/t1/83413/7/2919/75714/5d135104E405929f3/5179733b57e41c5a.jpg!q70.dpg.webp#//img12.360buyimg.com/cms/jfs/t28189/336/1290422172/77368/84da634d/5cdb75c0N0bde6f8b.jpg!q70.dpg.webp#//img14.360buyimg.com/cms/jfs/t1/54747/14/440/200627/5cda5ed6E3e8e0823/74d459b68decbd0f.jpg!q70.dpg.webp#//img13.360buyimg.com/cms/jfs/t29014/282/1229050149/248448/4237cf0d/5cd98a86Nadba42af.jpg!q70.dpg.webp#//img12.360buyimg.com/cms/jfs/t10675/160/2822110052/245339/634d50a/5cd98b44N056d97ee.jpg!q70.dpg.webp#','推荐')
+
+

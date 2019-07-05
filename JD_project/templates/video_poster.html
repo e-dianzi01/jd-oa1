@@ -1,0 +1,14 @@
+<input  type="text" class="text-field admintextinputwidget form-control" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value }}"{% endif %} />
+<br>
+<button type="button"
+        class="btn btn-primary"
+        onclick="poster_file.click()">上传图片</button>
+<input type="file" id="poster_file" style="display:none;" onchange="upload_poster(this.files[0])">
+<script src="/static/js/jquery.min.js"></script>
+<script>
+    function upload_poster(poster_file){
+        if(poster_file.type.startswith('image')){
+            alert('正在上传..'+poster_file.name)
+        }
+    }
+</script>

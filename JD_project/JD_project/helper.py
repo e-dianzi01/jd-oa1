@@ -7,3 +7,5 @@ import hashlib
 def make_password(pwd_str):
     return hashlib.md5(('@&$' + pwd_str + '$&@').encode()).hexdigest()
 
+
+

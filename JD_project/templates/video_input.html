@@ -1,0 +1,28 @@
+<input  type="text" id="video_url" class="text-field admintextinputwidget form-control" name="{{ widget.name }}"{% if widget.value != None %}  value="{{ widget.value }}"{% endif %} />
+<br>
+<button type="button"
+        class="btn btn-primary"
+        onclick="video_file.click()">上传视频</button> &nbsp;&nbsp;*<span class="text-info">视频格式仅支持mp4</span>
+<input type="file" id="video_file" style="display:none;" onchange="upload_video(this.files[0])">
+<script src="/static/js/jquery.min.js"></script>
+<script>
+    function upload_video(video_file){
+        console.log(video_file.type)
+        if(video_file.type == "video/mp4"){
+            alert(video_file.name+" 正在上传...")
+            var request = new XMLHttpRequest()
+            request.open('POST', 'http://121.199.63.71:9001/upload_video/', true)
+            request.onload = function(){
+                data = request.responseText
+                data = JSON.parse(data)
+                $('#video_url').val(data.url)
+            }
+
+            var formdata = new FormData()
+            formdata.append('video', video_file)
+            request.send(formdata)
+        }else{
+            alert("上传的视频格式必须是mp4")
+        }
+    }
+</script>

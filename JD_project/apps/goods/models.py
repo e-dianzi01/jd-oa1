@@ -8,12 +8,13 @@ from users.models import JdShopper
 class GoodsDetails(models.Model):
     m_id = models.ForeignKey(JdShopper, on_delete=models.CASCADE, verbose_name='店铺id')
     goods_id = models.IntegerField(verbose_name='商品编号', primary_key=True)
-    goods_img = models.CharField(max_length=255, verbose_name='商品展示图片', blank=True, null=True)
+    goods_img = models.CharField(max_length=255, verbose_name='商品展示图片地址', blank=True, null=True)
     goods_name = models.CharField(max_length=200, verbose_name='商品名称', default='', blank=True, null=True)
     goods_prices = models.FloatField(max_length=50, verbose_name='商品单价', default=0, blank=True, null=True)
-    kill_prices = models.FloatField(max_length=50, verbose_name='秒杀价格', default=0, blank=True, null=True)
+    kill_prices = models.FloatField(max_length=50, verbose_name='优惠价格', default=0, blank=True, null=True)
     goods_num = models.IntegerField(verbose_name='商品库存', default=1, blank=True, null=True)
-    goods_state = models.IntegerField(verbose_name='商品上架状态', default=1, choices=((0, '下架'), (1, '上架')), blank=True, null=True)
+    goods_state = models.IntegerField(verbose_name='商品上架状态', default=1,
+                                      choices=((0, '下架'), (1, '上架')), blank=True, null=True)
     one_category_id = models.IntegerField(verbose_name='一级分类id', blank=True, null=True)
     two_category_id = models.IntegerField(verbose_name='二级分类id', blank=True, null=True)
     keywords = models.CharField(max_length=50, verbose_name='关键字', blank=True, null=True)
@@ -21,7 +22,7 @@ class GoodsDetails(models.Model):
     sales = models.IntegerField(verbose_name='销量', default=0, blank=True, null=True)
     label = models.CharField(max_length=100, verbose_name='标签', blank=True, null=True)
     rate = models.CharField(max_length=100, verbose_name='好评率', blank=True, null=True)
-    evaluate = models.IntegerField(verbose_name='评价条数', blank=True, null=True)
+    evaluate = models.IntegerField(verbose_name='评价条数', default=0, blank=True, null=True)
 
     def __str__(self):
         return self.goods_name
@@ -137,10 +138,10 @@ class GoodsSku(models.Model):
 # 创建商品图片表
 class GoodsImages(models.Model):
     goods_id = models.ForeignKey(GoodsDetails, verbose_name='关联商品')
-    img_urls = models.CharField(max_length=2000, verbose_name='商品详情图片', blank=True, null=True)
+    img_urls = models.TextField(verbose_name='商品详情图片地址', blank=True, null=True)
 
     def __str__(self):
-        return self.goods_id
+        return self.goods_id.goods_name
 
     class Meta:
         db_table = 'goods_imgs'
@@ -166,9 +167,7 @@ class Coupon(models.Model):
     user_id = models.CharField(max_length=50, verbose_name='用户id', blank=True, null=True)
     cop_id = models.IntegerField(verbose_name='优惠券id')
     title = models.CharField(max_length=255, verbose_name='使用场景', blank=True, null=True)
-    vuc = models.IntegerField(verbose_name='使用规则(0/1)',
-                              default=0,
-                              choices=((0, '无门槛优惠券'), (1, '满减优惠券')), blank=True, null=True)
+    vuc = models.FloatField(verbose_name='价格限制', blank=True, null=True)
     minusprice = models.FloatField(verbose_name='优惠价格', blank=True, null=True)
 
     class Meta:
@@ -180,10 +179,11 @@ class Coupon(models.Model):
 # 商铺详情图片
 class ShopperImg(models.Model):
     m_id = models.ForeignKey(JdShopper, on_delete=models.CASCADE, verbose_name='关联商户')
-    img = models.CharField(max_length=2000, verbose_name='关联商品详细图片', blank=True, null=True)
+    img = models.TextField(verbose_name='商品详细图片地址', blank=True, null=True)
     remark = models.CharField(max_length=100, verbose_name='图片类别', blank=True, null=True)
 
     class Meta:
         db_table = 'shopper_img'
         verbose_name = '商铺详情图片'
         verbose_name_plural = verbose_name
+
