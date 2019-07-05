@@ -20,7 +20,7 @@ class OrderDetail(models.Model):
     o_time = models.DateTimeField(verbose_name='下单时间', auto_now_add=True, blank=True, null=True)
     o_status = models.IntegerField(verbose_name='订单状态', default=0, choices=((0, '待付款'),
                                                                             (1, '待收货'),
-                                                                            (2, '待评价'),
+                                                                            (2, '已完成'),
                                                                             (3, '已失效')), blank=True, null=True)
     o_shopper = models.ForeignKey(JdShopper, on_delete=models.CASCADE, verbose_name='关联商户')
     o_total = models.FloatField(verbose_name='订单总价', blank=True, null=True)

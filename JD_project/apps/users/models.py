@@ -18,7 +18,7 @@ class JdUser(models.Model):
                                  choices=((0, '未验证'), (1, '已验证')),  blank=True, null=True)
     tel = models.CharField(max_length=15, verbose_name='联系电话', blank=True, null=True)
     asset = models.FloatField(verbose_name='余额', default=0,  blank=True, null=True)
-    u_img = models.CharField(max_length=255, verbose_name='用户头像地址', blank=True, null=True)
+    u_img = models.TextField(verbose_name='用户头像地址', blank=True, null=True)
     u_bank = models.CharField(max_length=50, verbose_name='银行卡', blank=True, null=True)
     user_card = models.CharField(max_length=50, verbose_name='身份证号', blank=True, null=True)
     pay_pwd = models.CharField(max_length=50, verbose_name='支付密码', blank=True, null=True)
@@ -86,7 +86,7 @@ class JdShopper(models.Model):
     update_time = models.DateTimeField(verbose_name='更新时间', auto_now=True, blank=True, null=True)
     is_active = models.IntegerField(verbose_name='登陆状态', default=1,
                                     choices=((0, '未登录'), (1, '已登录')), blank=True, null=True)
-    m_img = models.CharField(max_length=255, verbose_name='****', blank=True, null=True)
+    m_img = models.TextField(verbose_name='****', blank=True, null=True)
     m_email = models.CharField(max_length=50, verbose_name='商户邮箱', blank=True, null=True)
     m_phone = models.CharField(max_length=15, verbose_name='手机号', blank=True, null=True)
     s_add = models.CharField(max_length=255, verbose_name='地址', blank=True, null=True)
